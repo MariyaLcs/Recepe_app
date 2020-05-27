@@ -1,17 +1,19 @@
-import React, { Component } from 'react';
-import Recipe from './Recipe';
-import './RecipeApp.css';
+import React, { Component } from "react";
+import Recipe from "./Recipe";
+import Navbar from "./Navbar";
+import "./RecipeApp.css";
 
 class RecipeApp extends Component {
   render() {
     return (
       <div className="App">
+        <Navbar />
         <Recipe
           title="pasta"
-          ingredients={['flour', 'water']}
+          ingredients={["flour", "water"]}
           instructions="Mix ingredients"
           img="spaghetti.jpg"
-          />
+        />
       </div>
     );
   }
